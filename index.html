@@ -26,17 +26,29 @@
             transition: scale ease-in-out 0.5s;
         }
 
-        button:hover {
+        button[type="button"]:hover {
             scale: 1.2;
         }
 
         .form {
             padding-top: 50px;
         }
+
+        .output {
+            border: 1px solid #ccc;
+            padding: 10px;
+            min-height: 20px;
+        }
     </style>
     <button type="button" class="button-1">Цільова кнопка</button>
     <button type="button" class="button-2">Повісити слухача</button>
     <button type="button" class="button-3">Видалити слухача</button>
+
+    <!-- <button class="js-clear">Очистити</button>
+    <p class="output js-output"></p> -->
+
+
+
 
     <!-- <input class="form-input" type="text" name="пошта" required><br>
         <input class="form-check" type="checkbox" name="check" required><br>
@@ -57,9 +69,12 @@
         //</select>
     //<p id="fruit-output"></p> -->
 
-    <input id="username" placeholder="Ім’я користувача" />
-    <p id="error-msg" style="color:red;"></p>
+    <!-- <input id="username" placeholder="Ім’я користувача" />
+    <p id="error-msg" style="color:red;"></p> -->
 
+
+    // <input type="text" id="input">
+    // <p id="message"></p>
 
 
     <script type="module" src="./js/script.js"></script>
